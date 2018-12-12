@@ -1,0 +1,7 @@
+{
+  "name": "IrisExamen",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
