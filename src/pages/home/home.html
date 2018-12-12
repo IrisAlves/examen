@@ -1,14 +1,37 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Iris Examen
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <button *ngIf="nconta!=''" ion-button
+    block
+    (click)="incrementarnum()"> Contador     
+</button>
+<p>{{num}}</p>
+
+<!-- <button ion-button
+    block
+    (click)="Irapagina2()"> Ir a Pagina 2     
+</button> -->
+<button ion-button
+    block    
+    [navPush]="pag2" > Ir a Pagina 2     
+</button>
+<button ion-button
+    block
+    color =danger 
+    (click)="clicmensaje()"> Mensaje 1     
+</button>
+<button *ngIf="num==5" ion-button
+    block
+    > Apartado 4     
+</button>
+<button *ngIf="num%2==0" ion-button
+    block
+    > apartado 5    
+</button>
 </ion-content>
